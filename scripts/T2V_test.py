@@ -50,7 +50,7 @@ def main(run):
 
 def create_argparser():
     defaults = dict(
-        data_dir='./data/test/TH/',
+        data_dir='./data/test_process/TH/',
         weights="./weights/latest.pt",
         use_fp16=False,
 

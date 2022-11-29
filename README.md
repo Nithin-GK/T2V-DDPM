@@ -21,9 +21,14 @@ conda activate T2V-diff
     |   |   └── VIS             # visible images
     |   └── test  # Testing
     |       ├── TH              # thermal images 
+    |       ├── sample.png      # one visible sample from training set to take colour bit from
+```
+3. Preprocess the testdata using:
+```
+python preprocess_test.py
 ```
 ## Training and Testing
-3 Run following commands to train and test 
+4. Run following commands to train and test 
 ```
 For training:
 export PYTHONPATH=$PYTHONPATH:$(pwd)
@@ -33,7 +38,7 @@ For testing:
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 CUDA_VISIBLE_DEVICES="0" NCCL_P2P_DISABLE=1  torchrun --nproc_per_node=1 --master_port=4326 scripts/T2V_test.py --weights /pathtoweights/ --data_dir /pathtodata/
 ```
-4. If you use our work, please use the following citation
+5. If you use our work, please use the following citation
 ```
 @article{nair2022t2v,
   title={T2V-DDPM: Thermal to Visible Face Translation using Denoising Diffusion Probabilistic Models},
