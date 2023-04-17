@@ -32,7 +32,7 @@ def setup_dist():
         return
     rank = int(os.environ['RANK'])
     num_gpus = th.cuda.device_count()
-    os.environ["CUDA_VISIBLE_DEVICES"] = f"{rank % num_gpus}"
+    # os.environ["CUDA_VISIBLE_DEVICES"] = f"{rank % num_gpus}"
     backend = "nccl"
 
     if backend == "gloo":
