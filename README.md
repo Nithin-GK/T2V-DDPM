@@ -38,6 +38,10 @@ For testing:
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 CUDA_VISIBLE_DEVICES="0" NCCL_P2P_DISABLE=1  torchrun --nproc_per_node=1 --master_port=4326 scripts/T2V_test.py --weights /pathtoweights/ --data_dir /pathtodata/
 ```
+## Model weights
+The weights for THVIS dataset can be found in [THVIS weights](https://www.dropbox.com/sh/dimitdov2uvy785/AACu-pniISP89kkvBZvQfD7na?dl=0)
+
+The weights for ARL-VTF dataset can be found in [ARL-VTF weights](https://www.dropbox.com/sh/6ur7cuml3vnuffg/AAAVm32o2N6eRZbuEzahchxOa?dl=0)
 5. If you use our work, please use the following citation
 ```
 @article{nair2022t2v,
