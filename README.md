@@ -1,5 +1,5 @@
-# T2V-DDPM
-T2V-DDPM: Thermal to Visible Face Translation using Denoising Diffusion Probabilistic Models
+#[IEEE FG'23] T2V-DDPM: Thermal to Visible Face Translation using Denoising Diffusion Probabilistic Models
+
 
 [Paper link](https://arxiv.org/pdf/2209.08814.pdf)
 
